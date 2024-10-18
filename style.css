@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+
+* {
+    background-image:url(assets/fondo.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*font-family: "Sixtyfour", sans-serif;*/
+    font-family: "Press Start 2P", system-ui;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#header-nombre {
+    font-family: "Sixtyfour", sans-serif;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#hola-p{
+    margin-top: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: "Sixtyfour", sans-serif;
+    font-size: 1rem;
+    color: white;
+    padding-top: 2%;
+}
+
+
+/* Definir el contenedor general */
+.content-frame {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start; 
+    gap: 20px; /* Espacio entre columnas */
+    padding: 20px;
+    height: 100vh; /* Altura completa de la pantalla */
+    color: rgb(0, 255, 0); /* Color del texto similar al de la imagen */
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Estilo para cada columna */
+#columna1, #columna2, #columna3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Estilo para los títulos */
+.titulo {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    height: 40px; /* Altura fija para los títulos */
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para el contenido */
+.contenido {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+   
+}
+.item {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#icons{
+    width: 50px;
+    height: auto;
+}
