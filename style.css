@@ -11,6 +11,43 @@
     margin: 0;
     padding: 0;
 }
+#main-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black; /* Color de fondo */
+    z-index: 1000; /* Asegura que el header esté encima de otros elementos */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: black; /* Color de fondo del nav */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Añadir padding-top a las secciones para evitar que el contenido quede debajo del header */
+section {
+    padding-top: 80px; /* Ajusta este valor si el header tiene otra altura */
+}
 
 body {
     /*font-family: "Sixtyfour", sans-serif;*/
@@ -50,16 +87,17 @@ html {
 
 
 /* Definir el contenedor general */
-.content-frame {
+#content-frame {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: start; 
+    align-items: center; 
     gap: 20px; /* Espacio entre columnas */
     padding: 20px;
     height: 100vh; /* Altura completa de la pantalla */
-    color: rgb(0, 255, 0); /* Color del texto similar al de la imagen */
+    color: white; /* Color del texto similar al de la imagen */
     margin-left: 20%;
     margin-right: 20%;
+
 }
 
 /* Estilo para cada columna */
@@ -90,7 +128,37 @@ html {
     grid-template-rows: auto;
 }
 
-#icons{
-    width: 50px;
-    height: auto;
+#contacto {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: flex; /* Habilita Flexbox */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+#p-contacto {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#icons-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-with-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#icon {
+    width: 40px;
+    height: 40px;
 }
